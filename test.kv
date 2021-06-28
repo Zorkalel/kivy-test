@@ -1,0 +1,53 @@
+
+
+BoxLayoutTest:
+#size hint : largeur, hauteur
+#pos hind : take only one, hor or vert
+
+
+<BoxLayoutTest>:
+    orientation: 'vertical'
+    Label:
+        text: "LOCATE YOUR DEVICE"
+    Image:
+        source:'flag.png'
+        size_hint: 1,3
+
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: "8dp"
+        Button:
+            text: "IP-adress"
+            size_hint: 1,.5
+            pos_hint: {'x': .1, 'y': .2}
+        Button:
+            text: "PHOTOS"
+            size_hint: 1,.5
+            pos_hint: {'x': .1, 'y': .2}
+    Button:
+        text:"QUIT"
+        size_hint:None,None
+        size:"40dp","20dp"
+        color:1,0,0,1
+        pos_hint:{"center_x": .5}
+
+#MainWidget:
+<MainWidget>:
+    Label:
+        text:"This if my first program to locate phone"
+        size:"100dp","30dp"
+        pos:"100dp","300dp"
+        color:1,1,1,1
+    Button:
+        text:"PICK PHOTOS"
+        size: "100dp","30dp"
+        pos:  "30dp","30dp"
+        color:1,0,0,1
+# size : longueur, largeur
+# pos : left/right, move up/down
+# dp : physical size
+    Button:
+        text:"PICK IP-ADRR"
+        size: "100dp","30dp"
+        pos:  "180dp","30dp"
+        color:1,0,1,1

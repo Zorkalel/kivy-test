@@ -1,0 +1,37 @@
+ezayi
+
+TEXT
+<image>
+
+pick up photo webcam and camera
+button PICK UP PICK
+
+pic up the ip address and send us it
+by mail
+
+button PICK IP
+
+button QUIT
+
+
+#MainWidget:
+# I am goint to test anuthing else
+<MainWidget>:
+    Label:
+        text:"This if my first program to locate phone"
+        size:"100dp","30dp"
+        pos:"100dp","300dp"
+        color:1,1,1,1
+    Button:
+        text:"PICK PHOTOS"
+        size: "100dp","30dp"
+        pos:  "30dp","30dp"
+        color:1,0,0,1
+# size : longueur, largeur
+# pos : left/right, move up/down
+# dp : physical size
+    Button:
+        text:"PICK IP-ADRR"
+        size: "100dp","30dp"
+        pos:  "180dp","30dp"
+        color:1,0,1,1
